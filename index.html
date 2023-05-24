@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/html-css_87_Mvic-net/assets/logo-34af21d2.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresh Harvest Box</title>
+
+  <!-- Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+
+  <!-- Animate on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  
+
+  <script type="module" crossorigin src="/html-css_87_Mvic-net/assets/index-0041fc85.js"></script>
+  <link rel="stylesheet" href="/html-css_87_Mvic-net/assets/index-37465603.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+  <div class="container header-containet">
+    <nav class="header-nav">
+      <ul class="list header-list-nav">
+        <li><a href="#work-ankor" class="link header-link-nav">How It Works</a></li>
+        <li><a href="#fruits" class="link header-link-nav">Fruits</a></li>
+        <li><a href="#footer-contacts-ankor" class="link header-link-nav">Contacts</a></li>
+      </ul>
+    </nav>
+    <a href="./index.html" class="link header-logo">
+      <svg class="header-logo-icon" width="16" height="16">
+        <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-logo"></use>
+      </svg>
+      <span class="header-text-wrapper">fresh harvest box</span>
+    </a>
+    <div class="header-btn-wrapper">
+      <button class="basket-button header-button js-open-modal" data-modal="1">
+        <svg class="header-basket-icon" width="28" height="28">
+          <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-header-packet"></use>
+        </svg>
+      </button>
+      <button class="mobile-menu-button header-button" aria-expanded="false" aria-controls="mobile-menu"
+        data-menu-button>
+        <svg class="mobile-menu-icon" width="24" height="24">
+          <use class="mobile-menu-icon-open" href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-mob-menu"></use>
+          <use class="mobile-menu-icon-close" href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-window-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section">
+  <div class="hero-container container">
+               <h1 class="hero-text">fresh harvest box <br> is your 0ne-stop place for a delicious fruit basket
+      </h1>
+
+    <div class="background">
+      <img class="dec-straw" srcset="data:image/png;base64,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 x1, /html-css_87_Mvic-net/assets/strawberry-hero-mob-w56@2x-f930c097.png x2" src="/html-css_87_Mvic-net/assets/strawberry-hero-tabl-w108@1x-f252129a.png"
+        width="56" height="56" />
+
+      <img class="dec-babnan" src="data:image/png;base64,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" srcset="data:image/png;base64,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 x1, /html-css_87_Mvic-net/assets/banana-hero-mob-w66@2x-321be98c.png x2" width="66" height="44" />
+
+
+
+      <div class="hero-girl-thumb">
+        <picture>
+<source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/images-hero/hero-girl/hero-girl@1.png 1x,
+              ./img/images-hero/hero-girl/hero-girl@2x.png 2x
+            "
+            type="image/png"
+          >
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/images-hero/hero-girl/hero-girl-mob@1.png 1x,
+              ./img/images-hero/hero-girl/hero-girl-mob@2x.png 2x
+            "
+            type="image/png">
+        </picture>
+
+        <img 
+      src="/html-css_87_Mvic-net/assets/hero-girl@1-e5f79b25.png"
+        alt="girl-with-orange" 
+        class="hero-photo"             
+        width="452"
+        height="702"
+         loading="lazy" data-aos="zoom-in" /></div>
+      
+        
+    
+
+
+      <button class="hero-btn" type="button" data-aos="zoom-in-up" data-aos-duration="250" data-aos-easing="ease-in-sine">
+        <a class="hero-btn-txt link" href="#fruits">shop now</a>
+      </button>
+    </div>
+
+    <ul class="hero-cards list">
+      <li class="wrap-position width" data-aos="fade-right">
+        <div class=" wrap-cards">
+          <p class="card-text">
+            Our expertly curated fruit baskets are made with the freshest,
+            highest quality fruits available. Whether you are looking for a
+            healthy snack or a gift for a loved one, Fresh Harvest Box has got
+            you covered.
+          </p>
+          <div class="top-card">
+            <h3 class=" top-card-text">Fruit</h3>
+            <div class="thamb-hero">
+              <img class="hero-img" src="/html-css_87_Mvic-net/assets/watermelon@1-a7990081.png" width="200" height="172" />
+              <p class="low-card-text">
+                Refreshing and juicy, watermelon is the perfect summer treat and
+                a great source of hydration
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="tag-list width" data-aos="fade-left">
+        <ul class=" tags list " data-aos="fade-left" data-aos-delay="300">
+          <li> <a class="hero-teg link" href="">#organic</a></li>
+          <li> <a class="hero-teg link" href="">#products</a></li>
+          <li> <a class="hero-teg link" href="">#basket</a></li>
+          <li> <a class="hero-teg link" href="">#fruits</a></li>
+        </ul>
+
+          
+        <div class="top-card low-card">
+          <h3 class="top-card-text yellow">Fruit</h3>
+          <div class="wrap-cards low-wrap">
+            <img class="hero-img hero-imglow" src="/html-css_87_Mvic-net/assets/strawberrybox@1-21f5c4d2.png" width="162" height="185" />
+            <p class="low-card-text">
+              Sweet and juicy, strawberries are packed with vitamin C and
+              antioxidants, making them a delicious and healthy snack
+            </p>
+          </div>
+
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+    <!-- Work-it -->
+    <section class="section" id="work-ankor">
+  <div class="container container-workit">
+    <h2 class="section-title workit">
+      To order your fruit basket, simply follow these easy steps
+    </h2>
+    <p class="section-desc workit">
+      Our baskets are assembled with care and delivered straight to your
+      doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+      your home. Whether you're looking for a healthy snack or a thoughtful
+      gift, our fruit baskets are the perfect choice.
+    </p>
+    <ul class="step-list list">
+      <li class="step-item" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="0">
+        <h3 class="steps-title first">First Step</h3>
+        <p class="steps-uppertitle">
+          Just choose the fruit you want to order by clicking on the checkboxes
+          next to it.
+        </p>
+      </li>
+      <li class="step-item" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+        <h3 class="steps-title second">Second Step</h3>
+        <p class="steps-uppertitle">
+          Click on the basket and fill out the form.
+        </p>
+      </li>
+      <li class="step-item" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+        <h3 class="steps-title third">Third Step</h3>
+        <p class="steps-uppertitle">
+          Sit back and relax! Your fresh fruit basket will be delivered.
+        </p>
+      </li>
+    </ul>
+    <picture>
+      <!-- <source media="(min-width: 1280px)" srcset="./img/work-it/freshharvestbox-desktop.gif" width="860px" /> -->
+      <!-- <source media="(min-width: 768px)" srcset="./img/work-it/freshharvestbox-tablet.gif" width="704px" /> -->
+
+
+      <source media="(min-width: 1280px)" srcset="/html-css_87_Mvic-net/assets/freshharvestbox-desktop-d0231bba.gif " width="860px" />
+      <source media="(min-width: 768px)" srcset="/html-css_87_Mvic-net/assets/freshharvestbox-tablet-21e4d1c0.gif " width="704px" />
+      <!-- <img src="./img/work-it/freshharvestbox-mobile.gif" style="width: auto" class="image-gif" loading="lazy" /> -->
+      <img src="/html-css_87_Mvic-net/assets/freshharvestbox-mobile-3b434e07.gif" style="width: auto" class="image-gif" loading="lazy" data-aos="fade-up" />
+    </picture>
+  </div>
+</section>
+
+    <!-- Fruits -->
+    <section class="section" id="fruits">
+    <div class="container">
+        <h2 class="section-title">oRGANIC fRUITS</h2>
+        <p class="section-desc">
+            Our organic fruits are hand-picked from local farms and delivered straight to your doorstep, ensuring
+            that
+            you get the
+            freshest and most nutritious produce possible. We offer a wide selection of organic fruits grown without
+            the
+            use of
+            harmful pesticides or chemicals.
+        </p>
+
+        <ul class="card-set product-list list">
+            <li class="card-set-item card strawberry" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Strawberry</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/strawberry@1x-d4bf2ced.webp 1x, /html-css_87_Mvic-net/assets/strawberry@2x-67c8aafe.webp 2x"
+                            type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/strawberry@1x-479f7463.png 1x, /html-css_87_Mvic-net/assets/strawberry@2x-35219134.png 2x"
+                            type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/strawberry@1x-479f7463.png" alt="Strawberry" width="295"
+                            height="2" loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">100 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card banana" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Banana</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/banana@1x-69a9aeb6.webp 1x, /html-css_87_Mvic-net/assets/banana@2x-b1bea20c.webp 2x" type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/banana@1x-f457ffb0.png 1x, /html-css_87_Mvic-net/assets/banana@2x-49822378.png 2x" type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/banana@1x-f457ffb0.png" alt="Banana" width="295" height="276"
+                            loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">80 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card watermelon" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Watermelon</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/watermelon@1x-41ac0861.webp 1x, /html-css_87_Mvic-net/assets/watermelon@2x-1f3e62bb.webp 2x"
+                            type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/watermelon@1x-d2d61ea9.png 1x, /html-css_87_Mvic-net/assets/watermelon@2x-0eb6646a.png 2x"
+                            type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/watermelon@1x-d2d61ea9.png" alt="Watermelon" width="295"
+                            height="276" loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">40 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card lime" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Lime</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/lime@1x-3940c337.webp 1x, /html-css_87_Mvic-net/assets/lime@2x-7ec6fb2c.webp 2x" type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/lime@1x-aeb85649.png 1x, /html-css_87_Mvic-net/assets/lime@2x-b56e8d1a.png 2x" type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/lime@1x-aeb85649.png" alt="Lime" width="295" height="276"
+                            loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">60 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card apple" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Apple</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/apple@1x-2e95a8a3.webp 1x, /html-css_87_Mvic-net/assets/apple@2x-66276e08.webp 2x" type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/apple@1x-7b16952a.png 1x, /html-css_87_Mvic-net/assets/apple@2x-39f71714.png 2x" type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/apple@1x-7b16952a.png" alt="Apple" width="295" height="276"
+                            loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">50 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card peach" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Peach</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/peach@1x-4b2b55ba.webp 1x, /html-css_87_Mvic-net/assets/peach@2x-a4ed6108.webp 2x" type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/peach@1x-e4f11d93.png 1x, /html-css_87_Mvic-net/assets/peach@2x-38d28eef.png 2x" type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/peach@1x-e4f11d93.png" alt="Peach" width="295" height="276"
+                            loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">80 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card plums" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Plums</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/plums@1x-da76b127.webp 1x, /html-css_87_Mvic-net/assets/plums@2x-e2211f8e.webp 2x" type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/plums@1x-1daee8d4.png 1x, /html-css_87_Mvic-net/assets/plums@2x-f09df3d7.png 2x" type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/plums@1x-1daee8d4.png" alt="Plums" width="295" height="276"
+                            loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">40 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card orange" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Orange</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/orange@1x-4d5204fb.webp 1x, /html-css_87_Mvic-net/assets/orange@2x-303546e3.webp 2x" type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/orange@1x-d546bafe.png 1x, /html-css_87_Mvic-net/assets/orange@2x-c4c5e121.png 2x" type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/orange@1x-d546bafe.png" alt="Orange" width="295" height="276"
+                            loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">60 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+            <li class="card-set-item card kiwi" data-aos="zoom-in-up">
+                <article>
+                    <p class="card-title">Kiwi</p>
+                    <p class="card-uppertitle">Plant</p>
+                    <picture>
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/kiwi@1x-194123a9.webp 1x, /html-css_87_Mvic-net/assets/kiwi@2x-180a04f4.webp 2x" type="image/webp" />
+                        <source media="(min-width: 320px)"
+                            srcset="/html-css_87_Mvic-net/assets/kiwi@1x-cd053072.png 1x, /html-css_87_Mvic-net/assets/kiwi@2x-45ac6618.png 2x" type="image/png" />
+                        <img class="card-img" src="/html-css_87_Mvic-net/assets/kiwi@1x-cd053072.png" alt="Kiwi" width="295" height="276"
+                            loading="lazy" />
+                    </picture>
+                    <div class="card-price-box">
+                        <p class="card-price">90 UAH / kg</p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+
+        <button class="fruits-btn btn js-open-modal" data-modal="1" type="button">
+            <svg class="fruits-btn-icon" width="14" height="14">
+                <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-fuits-btn"></use>
+            </svg>
+            <span class="fruits-btn-txt">oRDER</span>
+        </button>
+    </div>
+</section>
+
+    <!-- Contacts -->
+    <section class="contacts-section section" id="footer-contacts-ankor">
+    <div class="container">
+        <div class="contacts-box">
+            <h2 class="contacts-title">FRESH HARVEST BOX HAS GOT YOU COVERED</h2>
+            <ul class="contacts-list list">
+                <li data-aos="fade-right">
+                    <picture>
+                        <!-- Desktop screen -->
+                        <source media="(min-width: 1255px)"
+                            srcset="/html-css_87_Mvic-net/assets/img.contacts.desktop1@1x-533eeb53.png 1x, /html-css_87_Mvic-net/assets/img.contacts.desktop1@2x-1cb7299b.png 2x"
+                            type="image/jpg">
+                        <!-- Tablet screen -->
+                        <source media="(min-width: 768px)"
+                            srcset="/html-css_87_Mvic-net/assets/img.contacts.tablet1@1x-962398b8.png 1x, /html-css_87_Mvic-net/assets/img.contacts.tablet1@2x-17a899e4.png 2x"
+                            type="image/jpg">
+                        <!-- Phone screen -->
+                        <source media="(max-width: 767px)"
+                            srcset="/html-css_87_Mvic-net/assets/img.contacts.mobile@1x-01a53ef9.png 1x, /html-css_87_Mvic-net/assets/img.contacts.mobile@2x-cc640e28.png 2x"
+                            type="image/jpg">
+                        <img src="/html-css_87_Mvic-net/assets/img.contacts.mobile@1x-01a53ef9.png" alt="Melon image">
+                    </picture>
+                </li>
+                <li class="contacts-image" data-aos="fade-left">
+                    <picture>
+                        <!-- Desktop screen -->
+                        <source media="(min-width: 1255px)"
+                            srcset="/html-css_87_Mvic-net/assets/img.contacts.desktop2@1x-42f46f74.png 1x, /html-css_87_Mvic-net/assets/img.contacts.desktop2@2x-39998142.png 2x"
+                            type="image/jpg">
+                        <!-- Tablet screen -->
+                        <source media="(min-width: 768px)"
+                            srcset="/html-css_87_Mvic-net/assets/img.contacts.tablet2@1x-208095c7.png 1x, /html-css_87_Mvic-net/assets/img.contacts.tablet2@2x-43577d31.png 2x"
+                            type="image/jpg">
+                        <img src="/html-css_87_Mvic-net/assets/img.contacts.tablet2@1x-208095c7.png" alt="Blueberry image">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+
+        <p class="contacts-text">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for
+            anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best
+            that nature has to offer!</p>
+
+        <!-- CONTACTS FORM -->
+        <form class="contacts-form" autocomplete="off">
+            <div class="contacts-form-box">
+                <input type="email" name="comtacts-email" class="contacts-input" placeholder="Enter email..." required
+                    minlength="2">
+                <button type="submit" class="contacts-button js-open-modal" data-modal="2">Send</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer section">
+  <div class="container footer-container">
+    <div class="footer-nav-block">
+      <div class="footer-logo-content">
+        <picture>
+          <!-- Tablet and Desktop screen  -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_87_Mvic-net/assets/image-footer-534d193d.png 1x, /html-css_87_Mvic-net/assets/image-footer@2x-afa0907b.png 2x"
+            type="image/png"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/html-css_87_Mvic-net/assets/image-footer-mob-831181bf.png 1x, /html-css_87_Mvic-net/assets/image-footer-mob@2x-bd565653.png 2x"
+            type="image/png"
+          />
+          <img
+            src="./img/image-footer.png"
+            class="footer-img"
+            alt="girl with bananas"
+            width="349"
+            height="179"
+          />
+        </picture>
+
+        <a href="./index.html" class="link logo">
+          <svg class="footer-icon-logo" width="16" height="16">
+            <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-logo"></use>
+          </svg>
+          <span class="footer-logo-text">fresh harvest box</span>
+        </a>
+      </div>
+      <nav class="footer-nav">
+        <ul class="list footer-list">
+        <li class="footer-list-item">
+          <a href="#work-ankor" class="link footer-list-link">How It Works</a>
+        </li>
+        <li class="footer-list-item">
+          <a href="#fruits" class="link footer-list-link">Fruits</a>
+        </li>
+        <li class="footer-list-item">
+          <a href="#footer-contacts-ankor" class="link footer-list-link"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+    </nav>
+    </div>
+
+    <div class="footer-contacts-block" id="footer-contacts-ankor">
+      <ul class="list footer-list-icons">
+        <li class="footer-icons-item">
+          <a href="https://www.facebook.com/" class="footer-socmedia-link" target="_blank" rel="noreferrer noopener" aria-label="facebook">
+            <svg class="footer-icon" width="24" height="24">
+              <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icons-item">
+          <a href="https://www.instagram.com/" class="footer-socmedia-link" target="_blank" rel="noreferrer noopener" aria-label="instagram">
+            <svg class="footer-icon" width="24" height="24">
+              <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icons-item">
+          <a href="https://www.youtube.com/" class="footer-socmedia-link" target="_blank" rel="noreferrer noopener" aria-label="youtube" >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <address class="footer-address">
+        <ul class="list footer-address-link">
+          <li>
+            <a class="link footer-address-tel" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li>
+              <a href="https://goo.gl/maps/dS8kxosQReKwPLUt8" target="_blank" class="link footer-address-text" rel="noreferrer noopener" aria-label="google maps" >
+                1678 S. Pioneer Road Salt Lake City
+                <span class="footer-address-postcode">UT 84104</span>
+              </a>
+            </p>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Modal Your-Order -->
+  <div class="modal-order modal" data-modal="1">
+    <!-- <div class="modal-order "> -->
+
+    <!-- Close btn -->
+    <button class="modal-close-btn js-modal-close">
+        <svg class="modal-close-btn-icon" width="24" height="24">
+            <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-icon_close"></use>
+        </svg>
+    </button>
+
+    <p class="modal-order-title">Your Order</p>
+
+    <!-- Basket cards -->
+    <ul class="modal-basket-list card-set list">
+        <li class="modal-basket-item card-set-item brown-item">
+            <div class="modal-basket-text-wrap">
+                <p class="modal-basket-text">Strawberry Basket</p>
+                <p class="modal-bascet-desk">Plant</p>
+            </div>
+            <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1280px)"
+                    srcset="/html-css_87_Mvic-net/assets/strawberry-basket-w173@1x-135eb96c.png 1x, /html-css_87_Mvic-net/assets/strawberry-basket-w173@2x-d16a59ca.png 2x"
+                    type="image/jpg" />
+
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="/html-css_87_Mvic-net/assets/strawberry-basket-w133@1x-93a69475.png 1x, /html-css_87_Mvic-net/assets/strawberry-basket-w133@2x-9e6d3ff5.png 2x"
+                    type="image/jpg" />
+
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                    srcset="/html-css_87_Mvic-net/assets/strawberry-basket-w88@1x-0d865047.png 1x, /html-css_87_Mvic-net/assets/strawberry-basket-w88@2x-cebf3319.png 2x"
+                    type="image/png" />
+
+                <img class="basket-img" src="/html-css_87_Mvic-net/assets/strawberry-basket-w88@1x-0d865047.png" alt="strawberry"
+                    height="95" loading="lazy" />
+            </picture>
+
+            <label for="strawberry-basket" class="modal-basket-label">
+                <input type="checkbox" name="basket" id="strawberry-basket" class="modal-basket-checkbox">
+                </input>
+            </label>
+        </li>
+        <li class="modal-basket-item card-set-item yellow-item">
+            <div class="modal-basket-text-wrap">
+                <p class="modal-basket-text">Apple Basket</p>
+                <p class="modal-bascet-desk">Plant</p>
+            </div>
+            <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1280px)"
+                    srcset="/html-css_87_Mvic-net/assets/apples-basket-w229@1x-e4a8f676.png 1x, /html-css_87_Mvic-net/assets/apples-basket-w229@2x-a1b061bd.png 2x"
+                    type="image/png" />
+
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="/html-css_87_Mvic-net/assets/apples-basket-w172@1x-b4377352.png 1x, /html-css_87_Mvic-net/assets/apples-basket-w172@2x-f506a174.png 2x"
+                    type="image/png" />
+
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                    srcset="/html-css_87_Mvic-net/assets/apples-basket-w106@1x-cb09fcb1.png 1x, /html-css_87_Mvic-net/assets/apples-basket-w106@2x-1f04ee17.png 2x"
+                    type="image/jpg" />
+
+                <img class="basket-img" src="/html-css_87_Mvic-net/assets/apples-basket-w106@1x-cb09fcb1.png" alt="apple" height="95"
+                    loading="lazy" />
+            </picture>
+
+            <label for="apple-basket" class="modal-basket-label">
+                <input type="checkbox" name="basket" id="apple-basket" class="modal-basket-checkbox">
+                </input>
+            </label>
+
+        </li>
+        <li class="modal-basket-item card-set-item green-item">
+            <div class="modal-basket-text-wrap">
+                <p class="modal-basket-text">Fruits Basket</p>
+                <p class="modal-bascet-desk">Plant</p>
+            </div>
+            <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1280px)"
+                    srcset="/html-css_87_Mvic-net/assets/mix-fruits-w229@1x-6c4822e4.png 1x, /html-css_87_Mvic-net/assets/mix-fruits-w229@2x-d61029eb.png 2x"
+                    type="image/png" />
+
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                    srcset="/html-css_87_Mvic-net/assets/mix-fruits-w172@1x-6f15c4ce.png 1x, /html-css_87_Mvic-net/assets/mix-fruits-w172@2x-974f1d49.png 2x"
+                    type="image/png" />
+
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                    srcset="/html-css_87_Mvic-net/assets/mix-fruits-w107@1x-3337bf79.png 1x, /html-css_87_Mvic-net/assets/mix-fruits-w107@2x-43bd5b1c.png 2x"
+                    type="image/jpg" />
+
+                <img class="basket-img" src="/html-css_87_Mvic-net/assets/mix-fruits-w107@1x-3337bf79.png" alt="fruits" height="95"
+                    loading="lazy" />
+            </picture>
+
+            <label for="fruits-basket" class="modal-basket-label">
+                <input type="checkbox" name="basket" id="fruits-basket" class="modal-basket-checkbox">
+                </input>
+            </label>
+
+        </li>
+    </ul>
+
+    <!-- User form -->
+    <form autocomplete="on" class="modal-fruits-form">
+        <label>
+            <input type="text" class="modal-fruit-input" name="user_name" placeholder="Enter full name..."
+                pattern="([a-zA-Z]+\s){1,}([a-zA-Z]+)">
+        </label>
+        <label>
+            <input type="email" class="modal-fruit-input" name="user_email" placeholder="Enter email..."
+                pattern="/^[\w\.-]+@[\w\.-]+\.\w+$/">
+        </label>
+        <label>
+            <input type="number" class="modal-fruit-input" name="user_card" placeholder="Enter card..."
+                pattern="[0-9]{,12}" minlength="16" maxlength="16">
+        </label>
+        <label>
+            <textarea class="modal-fruits-textaria" name="user_comment" cols="30" rows="10"
+                placeholder="Enter comments...">
+                </textarea>
+        </label>
+
+        <button class="modal-fruits-button" type="submit">Submit</button>
+    </form>
+    <!-- </div> -->
+</div>
+
+  <!-- Modal Thank-You -->
+  <!-- <div class="backdrop-thank-you overlay js-overlay-modal">
+  <div class="window-thank-you modal" data-modal="2">
+    <picture>
+      <source
+        srcset="
+          ./img/opt-img/pop-up/raspberries-thank-you-mob-w207@1x.png 1x,
+          ./img/opt-img/pop-up/raspberries-thank-you-mob-w207@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+
+      <source
+        srcset="
+          ./img/opt-img/pop-up/raspberries-thank-you-desk-tabl-w278@1x.png 1x,
+          ./img/opt-img/pop-up/raspberries-thank-you-desk-tabl-w278@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+
+      <img
+        src="./img/opt-img/pop-up/raspberries-thank-you-mob-w207@1x.png"
+        alt="raspberries"
+        class="img-thank-you"
+      />
+    </picture>
+
+    <div class="text-box-thank-you">
+      <h2 class="title-thank-you">tHANK YOU</h2>
+      <p class="prg-thank-you">
+        Thank you for your order! Our team is preparing your box with fresh,
+        delicious fruits and vegetables, and we'll deliver it straight to your
+        doorstep. We appreciate your business and look forward to providing you
+        with the best possible experience!
+      </p>
+    </div>
+    <button class="btn-thank-you js-modal-close" type="button">
+      <svg class="icon-btn">
+        <use href="./img/icons/icons.svg#icon-window-close"></use>
+      </svg>
+    </button>
+  </div>
+</div> -->
+
+
+<div class="window-thank-you modal" data-modal="2">
+  <picture>
+    <source srcset="/html-css_87_Mvic-net/assets/raspberries-thank-you-mob-w207@1x-a0592f50.png 1x, /html-css_87_Mvic-net/assets/raspberries-thank-you-mob-w207@2x-c2fe1c58.png 2x" media="(max-width: 767px)" />
+
+    <source srcset="/html-css_87_Mvic-net/assets/raspberries-thank-you-desk-tabl-w278@1x-85123eb9.png 1x, /html-css_87_Mvic-net/assets/raspberries-thank-you-desk-tabl-w278@2x-a161c5ec.png 2x" media="(min-width: 768px)" />
+
+    <img src="/html-css_87_Mvic-net/assets/raspberries-thank-you-mob-w207@1x-a0592f50.png" alt="raspberries" class="img-thank-you" />
+  </picture>
+
+  <div class="text-box-thank-you">
+    <h2 class="title-thank-you">tHANK YOU</h2>
+    <p class="prg-thank-you">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
+  <button class="btn-thank-you js-modal-close" type="button">
+    <svg class="icon-btn">
+      <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-window-close"></use>
+    </svg>
+  </button>
+</div>
+
+  <!-- Mobile-menu -->
+  <div class="menu-container" id="mobile-menu" data-menu>
+  <ul class="mobile-menu-list list">
+    <li class="mobile-menu-item">
+      <a href="#work-it" class="mobile-menu-link link">How It Works</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#fruits" class="mobile-menu-link link">Fruits</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#contacts" class="mobile-menu-link link">Contacts</a>
+    </li>
+  </ul>
+  <a href="#fruits" class="mobile-menu-icon-link"
+    ><svg class="mobile-menu-icon" width="24" height="24">
+      <use href="/html-css_87_Mvic-net/assets/icons-20375b87.svg#icon-basket"></use>
+    </svg>
+  </a>
+</div>
+
+
+  <div class="overlay js-overlay-modal"></div>
+
+  <!-- Add JS -->
+  
+  
+  
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
